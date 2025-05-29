@@ -3,7 +3,7 @@
   <div class="text-center">
     <p></p>
     <img
-      src="{% static 'img/fevicon.png' %}"
+      src="https://raw.githubusercontent.com/najibulazam/NextCircle-Social-App/refs/heads/master/socialapp/static/img/fevicon.png"
       alt="icon"
       style="width: 80px; display: block; margin: 0 auto"
     />
@@ -13,7 +13,7 @@
   <div class="row">
     <div class="col-md-3 ms-auto p-3">
       {% if user.is_authenticated %}
-      <a class="btn btn-primary me-2" src="https://raw.githubusercontent.com/najibulazam/NextCircle-Social-App/refs/heads/master/socialapp/static/img/fevicon.png"
+      <a class="btn btn-primary me-2" href="{% url 'create_post' %}"
         ><i class="fa-solid fa-plus"></i>Create Post</a
       >
       {% endif %}
